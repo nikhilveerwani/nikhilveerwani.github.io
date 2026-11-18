@@ -345,6 +345,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
         </div>
       </article>
 
+      <article class="case" data-cat="demo auto">
+        <div class="meta">
+          <div class="org">Open-source demo + template</div>
+          <div class="when">2026</div>
+          <div class="tags"><span class="demo-tag">Synthetic data</span><span class="tag">Apps Script</span><span class="tag">Slack</span><span class="tag">Node tests</span></div>
+        </div>
+        <div class="body">
+          <h3>Lead SLA Monitor: a live report and a Sheets template anyone can use</h3>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>Leads that never get called are invisible. Teams see "calls made", not "leads missed", and a weekly report arrives too late to save any of them.</dd></div>
+            <div><dt>What I built</dt><dd>A clean-room rebuild of an alert I run in production. One tested file holds all the SLA rules and runs in Apps Script, in Node tests and in the demo build. The Google Sheets template builds an SLA summary and a breached-leads tab whose reasons survive every refresh, and it posts a Slack digest 3× a day.</dd></div>
+            <div class="res"><dt>Result</dt><dd>SLA by team and rep, a call-now list, and an auto-detected pattern: <span class="res-num">Saturday</span> leads miss the SLA because nobody calls on Sunday. <span class="res-num">14</span> tests run on every build.</dd></div>
+          </dl>
+          <div class="case-links"><a class="primary" href="https://nikhilveerwani.github.io/lead-sla-monitor/" target="_blank" rel="noopener">Open live demo ↗</a><a href="https://github.com/nikhilveerwani/lead-sla-monitor" target="_blank" rel="noopener">View code &amp; template ↗</a></div>
+          <div class="stack">Google Apps Script · JavaScript · Slack webhooks · Python · Chart.js · GitHub Actions</div>
+        </div>
+      </article>
+
       <article class="case" data-cat="data">
         <div class="meta">
           <div class="org">Interview Kickstart</div>
