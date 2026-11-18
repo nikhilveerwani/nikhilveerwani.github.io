@@ -327,6 +327,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
 
     <div class="cases">
       <!-- ===== PROJECT CARD: copy this <article> block to add a new project. data-cat = data | auto | apps | biz (space-separated) ===== -->
+      <article class="case" data-cat="demo biz data">
+        <div class="meta">
+          <div class="org">Open-source demo</div>
+          <div class="when">2026</div>
+          <div class="tags"><span class="demo-tag">Synthetic data</span><span class="tag">A/B test</span><span class="tag">Retention</span><span class="tag">Python</span></div>
+        </div>
+        <div class="body">
+          <h3>Mechanic Loyalty Analytics: what grew it, and who to win back</h3>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>A scan-and-earn programme like the one I headed: what actually drove active mechanics up, are referrals worth paying for, which dormant mechanics a win-back campaign should target, and what the unredeemed points cost.</dd></div>
+            <div><dt>What I built</dt><dd>Growth accounting (retained, new, reactivated, lost) and cohorts, a same-cohort referral comparison with a confidence interval, and a reactivation score (logistic regression, holdout AUC and calibration). That score is combined with a randomised win-back test to draw a targeting profit curve. There's also a points-liability ledger for Finance.</dd></div>
+            <div class="res"><dt>Result</dt><dd>Retention, not acquisition, drove the growth. Referred mechanics stay <span class="res-num">+8 pts</span> longer. Win-back lift is <span class="res-num">24 pts</span> in the top decile vs 6 overall, so targeting the top half earns about <span class="res-num">4×</span> what nudging everyone does.</dd></div>
+          </dl>
+          <div class="case-links"><a class="primary" href="https://nikhilveerwani.github.io/loyalty-programme-analytics/" target="_blank" rel="noopener">Open live report ↗</a><a href="https://github.com/nikhilveerwani/loyalty-programme-analytics" target="_blank" rel="noopener">View code ↗</a></div>
+          <div class="stack">Python · NumPy (logistic regression from scratch) · randomised experiment · Chart.js · GitHub Actions</div>
+        </div>
+      </article>
+
       <article class="case" data-cat="demo data biz">
         <div class="meta">
           <div class="org">Open-source · public data</div>
