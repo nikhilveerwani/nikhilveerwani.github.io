@@ -327,6 +327,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
 
     <div class="cases">
       <!-- ===== PROJECT CARD: copy this <article> block to add a new project. data-cat = data | auto | apps | biz (space-separated) ===== -->
+      <article class="case" data-cat="demo data biz">
+        <div class="meta">
+          <div class="org">Open-source · public data</div>
+          <div class="when">2026</div>
+          <div class="tags"><span class="tag">LightGBM</span><span class="tag">Forecasting</span><span class="tag">Inventory</span></div>
+        </div>
+        <div class="body">
+          <h3>Retail Demand Forecast: 3,049 products, one real Walmart store</h3>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>Simple replenishment rules ("repeat last week", "recent average") over-stock some products and miss others. Is a machine-learning forecast worth it, and for which decisions? It extends inventory work I did in retail.</dd></div>
+            <div><dt>What I built</dt><dd>A global LightGBM on public M5 data with leak-free features (a unit test proves it), back-tested on 3 unseen months against two baselines. A paired bootstrap tests the gain, and errors are translated into safety stock at exactly 95% availability, broken down by ABC × XYZ segment.</dd></div>
+            <div class="res"><dt>Result</dt><dd>Store forecast off by <span class="res-num">5.7%</span> vs 8.3–16% for simple rules, and about <span class="res-num">15%</span> less safety stock for the same availability. The gain sits in steady, high-revenue products; for erratic ones a simple rule is as good.</dd></div>
+          </dl>
+          <div class="case-links"><a class="primary" href="https://nikhilveerwani.github.io/retail-demand-forecast/" target="_blank" rel="noopener">Open live report ↗</a><a href="https://github.com/nikhilveerwani/retail-demand-forecast" target="_blank" rel="noopener">View code ↗</a></div>
+          <div class="stack">Python · pandas · LightGBM (Tweedie) · bootstrap · GitHub Actions</div>
+        </div>
+      </article>
+
       <article class="case" data-cat="demo apps data">
         <div class="meta">
           <div class="org">Open-source demo</div>
