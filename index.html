@@ -363,6 +363,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
         </div>
       </article>
 
+      <article class="case" data-cat="demo data biz">
+        <div class="meta">
+          <div class="org">Open-source demo</div>
+          <div class="when">2026</div>
+          <div class="tags"><span class="demo-tag">Synthetic data</span><span class="tag">Python</span><span class="tag">BigQuery SQL</span><span class="tag">ROAS</span></div>
+        </div>
+        <div class="body">
+          <h3>Funnel &amp; ROI Console: which campaigns to scale, fix or cut</h3>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>Marketing reports cost per lead and sales reports revenue, so nobody can say which rupees became which sales. A name-based join silently drops leads from renamed campaigns, and recent cohorts look like failures because their sales haven't landed yet.</dd></div>
+            <div><dt>What I built</dt><dd>A clean-room rebuild of a console I run in production. It joins spend to the full funnel on campaign ID, pulled from messy UTMs, and cohorts outcomes on the lead date with a 30-day maturity rule. It plots CPL against mature-cohort ROAS, and rule-based "what moved" alerts are sized in rupees. The same join is also written in BigQuery SQL.</dd></div>
+            <div class="res"><dt>Result</dt><dd>The ID join matches <span class="res-num">98.5%</span> of paid leads against <span class="res-num">87%</span> by name. It surfaces the cheapest-CPL campaign as the worst investment, a creative-fatigue CPL jump, and a broken landing page still spending.</dd></div>
+          </dl>
+          <div class="case-links"><a class="primary" href="https://nikhilveerwani.github.io/funnel-roi-console/" target="_blank" rel="noopener">Open live demo ↗</a><a href="https://github.com/nikhilveerwani/funnel-roi-console" target="_blank" rel="noopener">View code ↗</a></div>
+          <div class="stack">Python · BigQuery SQL · Chart.js · GitHub Actions · GitHub Pages</div>
+        </div>
+      </article>
+
       <article class="case" data-cat="data">
         <div class="meta">
           <div class="org">Interview Kickstart</div>
