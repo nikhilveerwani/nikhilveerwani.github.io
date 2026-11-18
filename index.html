@@ -345,6 +345,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
         </div>
       </article>
 
+      <article class="case" data-cat="demo data">
+        <div class="meta">
+          <div class="org">Open-source demo</div>
+          <div class="when">2026</div>
+          <div class="tags"><span class="demo-tag">Synthetic data</span><span class="tag">Identity resolution</span><span class="tag">Recursive SQL</span></div>
+        </div>
+        <div class="body">
+          <h3>Lead Dedup &amp; Attribution: how many leads each channel really brought</h3>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>The dashboard said Organic brought the most leads. It was wrong three ways: one person counted several times, a rolling dedup that never re-counted returning people, and a site that stamps "organic" over paid traffic that lost its UTMs.</dd></div>
+            <div><dt>What I built</dt><dd>A clean-room rebuild of work I did in production. People are linked on normalised email or phone with union-find. Rolling dedup is compared with anchor 45-day dedup, the anchor version written as a recursive CTE. An ordered 8-check Organic rule records why each lead failed and where it really came from. 17 unit tests cover the traps.</dd></div>
+            <div class="res"><dt>Result</dt><dd>Anchor dedup counts about <span class="res-num">5%</span> more real leads than rolling. The Organic rule shows about <span class="res-num">45%</span> of "Organic" was really paid, email or test traffic. Dedup alone barely moved it.</dd></div>
+          </dl>
+          <div class="case-links"><a class="primary" href="https://nikhilveerwani.github.io/lead-dedup-attribution/" target="_blank" rel="noopener">Open live demo ↗</a><a href="https://github.com/nikhilveerwani/lead-dedup-attribution" target="_blank" rel="noopener">View code ↗</a></div>
+          <div class="stack">Python · BigQuery SQL (recursive CTE) · Chart.js · GitHub Actions</div>
+        </div>
+      </article>
+
       <article class="case" data-cat="demo auto">
         <div class="meta">
           <div class="org">Open-source demo + template</div>
